@@ -6,19 +6,21 @@
 using namespace std;
 using namespace std::filesystem;
 
-void show() {
+void show()
+{
     path listDirectory = ".";
 
-    if(exists(listDirectory)&& is_directory(listDirectory)) {
+    if (exists(listDirectory) && is_directory(listDirectory))
+    {
 
-        for (const auto & entry:
-        directory_iterator(listDirectory)) {
-            cout<< "File: " << entry.path() << endl;
+        for (const auto &entry :
+             directory_iterator(listDirectory))
+        {
+            cout << "File: " << entry.path() << endl;
         }
     }
-    else {
-        cerr<< "No Directory Found!";
+    else
+    {
+        cerr << "No Directory Found!";
     }
-
-    return 0;
 }

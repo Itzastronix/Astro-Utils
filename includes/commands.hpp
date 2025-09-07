@@ -1,7 +1,9 @@
 #pragma once
 #include <string>
 
-namespace astro {
+namespace astro
+{
     void help();
-    void show(const std::string& directory);
+    void show(const std::string &directory);
+    void createFile(const string &dirpath);
 }
