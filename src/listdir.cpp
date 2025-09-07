@@ -1,11 +1,12 @@
 #include <iostream>
 #include <filesystem>
 #include <fstream>
+#include "includes/commands.hpp"
 
 using namespace std;
 using namespace std::filesystem;
 
-int main() {
+void show() {
     path listDirectory = ".";
 
     if(exists(listDirectory)&& is_directory(listDirectory)) {
