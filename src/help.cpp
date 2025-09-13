@@ -1,6 +1,6 @@
 #include <iostream>
-#include <windows.h>
 #include "includes/commands.hpp"
+#include <window.h>
 
 using namespace std;
 
